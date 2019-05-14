@@ -11,17 +11,17 @@
             <Border Background="White" Margin="10 20" CornerRadius="5">
                 <StackPanel Margin="25">
                     <ComboBox Margin="15" Text="Region" Name="regioncombo" SelectedIndex="6">
-                        <ComboBoxItem Tag="RU"/>
-                        <ComboBoxItem Tag="KR"/>
-                        <ComboBoxItem Tag="BR1"/>
-                        <ComboBoxItem Tag="OC1"/>
-                        <ComboBoxItem Tag="JP1"/>
-                        <ComboBoxItem Tag="NA1"/>
-                        <ComboBoxItem Tag="EUN1"/>
-                        <ComboBoxItem Tag="EUW1"/>
-                        <ComboBoxItem Tag="TR1"/>
-                        <ComboBoxItem Tag="LA1"/>
-                        <ComboBoxItem Tag="LA2"/>
+                        <ComboBoxItem Tag="RU" Content="RU"/>
+                        <ComboBoxItem Tag="KR" Content="KR"/>
+                        <ComboBoxItem Tag="BR1" Content="BR"/>
+                        <ComboBoxItem Tag="OC1" Content="OCE"/>
+                        <ComboBoxItem Tag="JP1" Content="JP"/>
+                        <ComboBoxItem Tag="NA1" Content="NA"/>
+                        <ComboBoxItem Tag="EUN1" Content="EUNE"/>
+                        <ComboBoxItem Tag="EUW1" Content="EUW"/>
+                        <ComboBoxItem Tag="TR1" Content="TR"/>
+                        <ComboBoxItem Tag="LA1" Content="LAN"/>
+                        <ComboBoxItem Tag="LA2" Content="LAS"/>
                     </ComboBox>
                     <TextBox Text="Summoner" Margin="15" Name="summonertext"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">

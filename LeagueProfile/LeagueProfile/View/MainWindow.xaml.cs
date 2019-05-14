@@ -37,7 +37,7 @@ namespace LeagueProfile
                 return;
             if (string.IsNullOrEmpty(summonertext.Text))
                 return;
-            Constant.Region = regioncombo.Text;
+            Constant.Region = selectedRegion;
             if (controller.GetSummoner(summonertext.Text))
             {
                 frame.NavigationService.Navigate(new ProfilePage());
