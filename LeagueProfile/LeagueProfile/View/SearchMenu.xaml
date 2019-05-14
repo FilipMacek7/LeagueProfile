@@ -1,0 +1,35 @@
+﻿<Page x:Class="LeagueProfile.View.SearchMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LeagueProfile.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SearchMenu" Height="600" Width="400" Background="#FF210A66">
+    <Grid>
+        <StackPanel Margin="50">
+            <Border Background="White" Margin="10 20" CornerRadius="5">
+                <StackPanel Margin="25">
+                    <ComboBox Margin="15" Text="Region" Name="regioncombo" SelectedIndex="6">
+                        <ComboBoxItem Tag="RU" Content="RU"/>
+                        <ComboBoxItem Tag="KR" Content="KR"/>
+                        <ComboBoxItem Tag="BR1" Content="BR"/>
+                        <ComboBoxItem Tag="OC1" Content="OCE"/>
+                        <ComboBoxItem Tag="JP1" Content="JP"/>
+                        <ComboBoxItem Tag="NA1" Content="NA"/>
+                        <ComboBoxItem Tag="EUN1" Content="EUNE"/>
+                        <ComboBoxItem Tag="EUW1" Content="EUW"/>
+                        <ComboBoxItem Tag="TR1" Content="TR"/>
+                        <ComboBoxItem Tag="LA1" Content="LAN"/>
+                        <ComboBoxItem Tag="LA2" Content="LAS"/>
+                    </ComboBox>
+                    <TextBox Text="Summoner" Margin="15" Name="summonertext"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Margin="15 50" Content="SEARCH" Click="Search" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

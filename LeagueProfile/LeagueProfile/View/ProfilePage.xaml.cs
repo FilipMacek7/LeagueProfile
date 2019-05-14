@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeagueProfile.Control;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,18 @@ namespace LeagueProfile.View
     /// </summary>
     public partial class ProfilePage : Page
     {
-        public ProfilePage()
+        Frame mainframe;
+        public ProfilePage(Frame Mainframe)
         {
+            Controller controller = new Controller();
+            mainframe = Mainframe;
             InitializeComponent();
+            this.DataContext = controller.GetContext();
+        }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            mainframe.NavigationService.Navigate(new SearchMenu(mainframe));
         }
     }
 }

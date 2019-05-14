@@ -8,6 +8,16 @@
       Title="ProfilePage"  Height="600" Width="400" Background="#FF210A66">
 
     <Grid>
-        
+        <StackPanel>
+            <Image Source="{Binding Path=Icon}" Height="100" Width="100" Margin="0,80,0,0"></Image>
+            <TextBlock  Text="{Binding Path=SummonerName}" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="WINS" FontSize="15" FontWeight="Bold" Foreground="Green"/>
+            <TextBlock Text="{Binding Path=Wins}" FontSize="18" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Text="LOSSES" FontSize="15" FontWeight="Bold" Foreground="DarkRed"/>
+            <TextBlock Text="{Binding Path=Losses}" FontSize="18" Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Text="LEVEL" FontSize="15" Foreground="Yellow"/>
+            <TextBlock Text="{Binding Path=Level}" HorizontalAlignment="Center" FontSize="80" Foreground="Gray"/>
+            <Button Height="50" Width="100" Content="BACK" Click="Back"></Button>
+        </StackPanel>
     </Grid>
 </Page>

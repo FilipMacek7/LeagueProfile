@@ -23,29 +23,10 @@ namespace LeagueProfile
     /// </summary>
     public partial class MainWindow : Window
     {
-        MainController controller = new MainController();
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Search(object sender, RoutedEventArgs e)
-        {
-            var selectedRegion = ((ComboBoxItem)regioncombo.SelectedItem).Tag.ToString();
-
-            if (string.IsNullOrEmpty(selectedRegion))
-                return;
-            if (string.IsNullOrEmpty(summonertext.Text))
-                return;
-            Constant.Region = selectedRegion;
-            if (controller.GetSummoner(summonertext.Text))
-            {
-                frame.NavigationService.Navigate(new ProfilePage());
-            }
-            else
-            {
-                MessageBox.Show("Not Found");
-            }
+            frame.Navigate(new SearchMenu(frame));
         }
     }
 }
